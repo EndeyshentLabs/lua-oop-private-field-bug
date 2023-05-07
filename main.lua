@@ -12,7 +12,7 @@ function Person:new(name)
         return "My name is " .. self.name
     end
 
-    function Person:getAge() -- The bug is triggered, when private field is acces through method that belongs to Class itself, not `public` table
+    function Person:getAge() -- The bug is triggered, when private field is accessed through method that belongs to Class itself, not `public` table
         return "I'm " .. private.age .. " years old"
     end
 
